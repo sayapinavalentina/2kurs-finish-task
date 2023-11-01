@@ -1,0 +1,149 @@
+html *
+{
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.body-style{
+    background-repeat: no-repeat;
+    background-image: url("res/background-image.png");
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    background-color: #FFFFFF; /* Цвет фона шапки */
+    padding: 10px 10px; /* Внутренние отступы шапки */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Заблюренная тень */
+}
+
+/* Стили для меню */
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-grow: 1; /* Занимает доступное пространство */
+    justify-content: center; /* Выравнивание по центру */
+}
+
+.menu li {
+    margin: 0 20px; /* Отступы между пунктами меню */
+}
+
+
+.menu a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #6B6B6B; /* Цвет ссылок */
+    font-size: 20px;
+}
+
+.menu a:hover {
+    color: #4C40F7; /* Новый цвет ссылок при наведении */
+    font-weight: 600; /* Увеличение жирности при наведении */
+}
+
+/* Стили для кнопки бургера */
+.cta-button {
+    display: none; /* Начально скрыта */
+    background-color: #4C40F7; /* Цвет фона кнопки */
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 10px; /* Закругление углов кнопки */
+    box-shadow: 0 3px 6px #4C40F7; /* Заблюренная тень */
+    cursor: pointer;
+}
+
+.main-header-button{
+    background-color: #4C40F7; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста на кнопке */
+    padding: 10px 20px; /* Внутренние отступы кнопки */
+    border: none;
+    height: 45px;
+    border-radius: 10px; /* Закругление углов кнопки */
+    box-shadow: 0 3px 6px #4C40F7; /* Заблюренная тень */
+    cursor: pointer;
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.cta-button:hover {
+    background-color: #fff;
+    color: #4C40F7; /* Цвет фона кнопки при наведении */
+    box-shadow: 0 3px 6px #7c7c7c;
+}
+
+.main-header-button:hover {
+    background-color: #fff;
+    color: #4C40F7; /* Цвет фона кнопки при наведении */
+    box-shadow: 0 3px 6px #7c7c7c;
+}
+
+/* Медиа-запрос для адаптивности */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Скрываем меню на мобильных устройствах */
+    }
+
+    .main-header-button{
+        display: none; /* Скрываем меню на мобильных устройствах */
+    }
+
+    .cta-button {
+        display: block; /* Показываем кнопку "бургер" */
+    }
+}
+
+.block-1 {
+    margin-left: 40px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+.h1-block-1 {
+    font-size: 71px;
+    font-weight: bolder;
+}
+.span-block-1{
+    color: #FF6800;
+}
+
+.p-block-1 {
+    font-size: 16px;
+  }
+  
+.a-block-1{
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+}
+.block-1-button{
+    background-color: #4C40F7; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста на кнопке */
+    padding: 10px 20px; /* Внутренние отступы кнопки */
+    border: none;
+    height: 64px;
+    width: 200px;
+    border-radius: 10px; /* Закругление углов кнопки */
+    box-shadow: 0 3px 6px #4C40F7; /* Заблюренная тень */
+    cursor: pointer;
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.col-1{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.p-block-1{
+    color: #6B6B6B;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
